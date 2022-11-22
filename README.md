@@ -22,6 +22,6 @@ matlab跟visio没写怎么完整，之前仿真验证的时候用过一下，代
 
    tips：要进行Canny检测的图片可以经过win10自带的3D绘图保存至bmp，大小一般为9k。
 
-![monkey](modelsim_tb/pic/monkey.bmp)
+![monkey](pic/monkey.bmp)
 
-![canny_demo](modelsim_tb/pic/canny_demo.bmp)
+![canny_demo](pic/canny_demo.bmp)
