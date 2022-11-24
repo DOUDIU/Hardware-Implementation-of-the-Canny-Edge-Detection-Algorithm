@@ -32,8 +32,8 @@ parameter rot15 = 32'd128    ;       //0.0018¶È*2^16
 
 parameter K = 32'h09b74;    //K=0.607253*2^16,32'h09b74,
 
-wire     signed [DATA_WIDTH_IN - 1 : 0]     x[15 : 0];
-wire     signed [DATA_WIDTH_IN - 1 : 0]     y[15 : 0];
+wire     signed [DATA_WIDTH_IN - 1 : 0]     x[16 : 0];
+wire     signed [DATA_WIDTH_IN - 1 : 0]     y[16 : 0];
 wire            [31 : 0]                    rot_out[15 : 0];
 
 assign      x[0]    =   sqrt_in_0;
