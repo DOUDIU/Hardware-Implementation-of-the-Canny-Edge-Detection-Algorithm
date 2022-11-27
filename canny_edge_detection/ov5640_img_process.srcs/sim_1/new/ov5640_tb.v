@@ -3,37 +3,37 @@
 //使用BMP图片格式仿真VIP视频图像处理算法
 module bmp_sim_VIP_tb();
  
-integer iBmpFileId;                 //输入BMP图片
+integer iBmpFileId;                     //输入BMP图片
 
-integer oBmpFileId_1;                 //输出BMP图片 1
-integer oBmpFileId_2;                 //输出BMP图片 2
-integer oBmpFileId_3;                 //输出BMP图片 3
-integer oBmpFileId_4;                 //输出BMP图片 3
+integer oBmpFileId_1;                   //输出BMP图片 1
+integer oBmpFileId_2;                   //输出BMP图片 2
+integer oBmpFileId_3;                   //输出BMP图片 3
+integer oBmpFileId_4;                   //输出BMP图片 3
 
-integer oTxtFileId;                 //输入TXT文本
- integer oTxtFileId_2;                 //输入TXT文本      
+integer oTxtFileId;                     //输入TXT文本
+ integer oTxtFileId_2;                  //输入TXT文本      
   
-integer iIndex = 0;                 //输出BMP数据索引
-integer pixel_index = 0;            //输出像素数据索引 
+integer iIndex = 0;                     //输出BMP数据索引
+integer pixel_index = 0;                //输出像素数据索引 
         
 integer iCode;      
         
-integer iBmpWidth;                  //输入BMP 宽度
-integer iBmpHight;                  //输入BMP 高度
-integer iBmpSize;                   //输入BMP 字节数
-integer iDataStartIndex;            //输入BMP 像素数据偏移量
+integer iBmpWidth;                      //输入BMP 宽度
+integer iBmpHight;                      //输入BMP 高度
+integer iBmpSize;                       //输入BMP 字节数
+integer iDataStartIndex;                //输入BMP 像素数据偏移量
     
-reg [7:0]   rBmpData [0:2000000];    //用于寄存输入BMP图片中的字节数据（包括54字节的文件头）
+reg [7:0]   rBmpData [0:2000000];       //用于寄存输入BMP图片中的字节数据（包括54字节的文件头）
 
-reg [7:0]   Vip_BmpData_1 [0:2000000]; //用于寄存视频图像处理之后 的BMP图片 数据 
-reg [7:0]   Vip_BmpData_2 [0:2000000]; //用于寄存视频图像处理之后 的BMP图片 数据 
-reg [7:0]   Vip_BmpData_3 [0:2000000]; //用于寄存视频图像处理之后 的BMP图片 数据 
+reg [7:0]   Vip_BmpData_1 [0:2000000];  //用于寄存视频图像处理之后 的BMP图片 数据 
+reg [7:0]   Vip_BmpData_2 [0:2000000];  //用于寄存视频图像处理之后 的BMP图片 数据 
+reg [7:0]   Vip_BmpData_3 [0:2000000];  //用于寄存视频图像处理之后 的BMP图片 数据 
 
-reg [7:0]   rBmpWord;                //输出BMP图片时用于寄存数据（以word为单位，即4byte）
-reg [7:0]   rBmpWord_2;                //输出BMP图片时用于寄存数据（以word为单位，即4byte）
+reg [7:0]   rBmpWord;                   //输出BMP图片时用于寄存数据（以word为单位，即4byte）
+reg [7:0]   rBmpWord_2;                 //输出BMP图片时用于寄存数据（以word为单位，即4byte）
 
 reg [7:0]   rBmpWord_8;
-reg [7:0]   pixel_data;              //输出视频流时的像素数据
+reg [7:0]   pixel_data;                 //输出视频流时的像素数据
 
 reg clk;
 reg rst_n;
@@ -103,25 +103,7 @@ initial begin
 	end
     $fclose(oBmpFileId_3);
 
-    
-    // //输出第四张
-	// oBmpFileId_1 = $fopen("../../../../../pic/canny_demo.bmp","wb+");
-	// for (iIndex = 0; iIndex < iBmpSize; iIndex = iIndex + 1) begin
-	// 	if(iIndex < 54)
-    //         Vip_BmpData_1[iIndex] = rBmpData[iIndex];
-    //     else
-    //         Vip_BmpData_1[iIndex] = vip_pixel_data_1[iIndex-54];
-	// end
-    // //将数组中的数据写到输出BMP图片中    
-	// for (iIndex = 0; iIndex < iBmpSize; iIndex = iIndex + 1) begin
-	// 	rBmpWord = Vip_BmpData_1[iIndex];
-	// 	$fwrite(oBmpFileId_1,"%c",rBmpWord);
-	// end
-    // $fclose(oBmpFileId_1);
 end
-
-//--------------------------------------------- 
-
 
 //---------------------------------------------		
 //初始化时钟和复位信号
@@ -315,29 +297,6 @@ VIP_RGB888_YCbCr444	u_VIP_RGB888_YCbCr444
 	.post_img_Cr		(post0_img_Cr		)			
 );
 
-//灰度图中值滤波
-wire        		median_vsync		  ;
-wire        		median_hsync		  ;
-wire        		median_de   		  ;
-wire        [7:0]	img_median		  	  ;
-
-vip_gray_median_filter u_vip_gray_median_filter(
-    .clk    (clk),   
-    .rst_n  (rst_n), 
-    
-    //预处理图像数据
-    .pe_frame_vsync (post0_frame_vsync	),      // vsync信号
-    .pe_frame_href  (post0_frame_href 	),       // href信号
-    .pe_frame_clken (post0_frame_clken	),      // data enable信号
-    .pe_img_y       (post0_img_Y 		),               
-                                           
-    //处理后的图像数据                     
-    .pos_frame_vsync (median_vsync		),        // vsync信号
-    .pos_frame_href  (median_hsync		),        // href信号
-    .pos_frame_clken (median_de   		),           // data enable信号
-    .pos_img_y       (img_median		)          //中值滤波后的灰度数据
-);
-
 //gaussian滤波
 wire        		gauss_vsync		  ;
 wire        		gauss_hsync		  ;
@@ -480,22 +439,23 @@ end
 
 //-------------------------------------
 //第三张图
-wire        PIC3_vip_out_frame_vsync;
-wire        PIC3_vip_out_frame_href ;
-wire        PIC3_vip_out_frame_clken;
-wire        [7:0]      PIC3_vip_out_img_R;
-wire        [7:0]      PIC3_vip_out_img_G;
-wire        [7:0]      PIC3_vip_out_img_B;
+wire                    PIC3_vip_out_frame_vsync    ;
+wire                    PIC3_vip_out_frame_href     ;
+wire                    PIC3_vip_out_frame_clken    ;
+wire        [7:0]       PIC3_vip_out_img_R          ;
+wire        [7:0]       PIC3_vip_out_img_G          ;
+wire        [7:0]       PIC3_vip_out_img_B          ;
 
- assign PIC3_vip_out_frame_vsync 	= median_vsync		  ;		   
- assign PIC3_vip_out_frame_href  	= median_hsync		  ;		   
- assign PIC3_vip_out_frame_clken 	= median_de   		  ;		 
- assign PIC3_vip_out_img_R 			= img_median		  ;		
- assign PIC3_vip_out_img_G 			= img_median          ;
- assign PIC3_vip_out_img_B 			= img_median	      ;
-reg [31:0]  PIC3_vip_cnt;
-reg         PIC3_vip_vsync_r;    //寄存VIP输出的场同步 
-reg         PIC3_vip_out_en;     //寄存VIP处理图像的使能信号，仅维持一帧的时间
+assign                  PIC3_vip_out_frame_vsync 	=   post0_frame_vsync	;		   
+assign                  PIC3_vip_out_frame_href  	=   post0_frame_href 	;		   
+assign                  PIC3_vip_out_frame_clken 	=   post0_frame_clken	;		 
+assign                  PIC3_vip_out_img_R 			=   post0_img_Y 		;		
+assign                  PIC3_vip_out_img_G 			=   post0_img_Y		    ;
+assign                  PIC3_vip_out_img_B 			=   post0_img_Y		    ;
+
+reg         [31:0]      PIC3_vip_cnt;
+reg                     PIC3_vip_vsync_r;    //寄存VIP输出的场同步 
+reg                     PIC3_vip_out_en;     //寄存VIP处理图像的使能信号，仅维持一帧的时间
 
 always@(posedge clk or negedge rst_n)begin
    if(!rst_n) 
