@@ -1,0 +1,299 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dE:/github/Canny-Edge-Detection/QuestaSim
+T_opt
+!s110 1681312582
+V^^3f@gViG?2PR1ba:SQm[2
+04 14 4 work bmp_sim_VIP_tb fast 0
+=2-00e04c361f81-6436cb45-3a1-1ca8
+o-quiet -auto_acc_if_foreign -work work
+Z1 tCvgOpt 0
+n@_opt
+OL;O;10.6c;65
+vbmp_sim_VIP_tb
+DXx6 sv_std 3 std 0 22 AD7iAPLo6nTIKk<N0eo=D3
+Z2 !s110 1681312573
+!i10b 1
+!s100 Y>o_O_49^DzNL5ChYFATX1
+IMXhnQHESJHN9iClzjS@JT0
+Z3 VDg1SIo80bB@j0V0VzS_@n1
+!s105 ov5640_tb_sv_unit
+S1
+R0
+w1681312566
+8E:/github/Canny-Edge-Detection/CannyEdgeDetection/CannyEdgeDetection.srcs/sim_1/new/ov5640_tb.sv
+FE:/github/Canny-Edge-Detection/CannyEdgeDetection/CannyEdgeDetection.srcs/sim_1/new/ov5640_tb.sv
+L0 4
+Z4 OL;L;10.6c;65
+r1
+!s85 0
+31
+Z5 !s108 1681312573.000000
+!s107 E:/github/Canny-Edge-Detection/CannyEdgeDetection/CannyEdgeDetection.srcs/sim_1/new/ov5640_tb.sv|
+!s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|E:/github/Canny-Edge-Detection/CannyEdgeDetection/CannyEdgeDetection.srcs/sim_1/new/ov5640_tb.sv|
+!i113 0
+o-work work -sv -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+R1
+nbmp_sim_@v@i@p_tb
+vcanny_doubleThreshold
+R2
+!i10b 1
+!s100 E?4F9An[SYOT:ROeBFzl?1
+IbV7MhC`ZjT@ao0?1?RK_00
+R3
+R0
+w1669524760
+8E:/github/Canny-Edge-Detection/CannyEdgeDetection/CannyEdgeDetection.srcs/sources_1/new/canny_doubleThreshold.v
+FE:/github/Canny-Edge-Detection/CannyEdgeDetection/CannyEdgeDetection.srcs/sources_1/new/canny_doubleThreshold.v
+L0 1
+R4
+r1
+!s85 0
+31
+R5
+!s107 E:/github/Canny-Edge-Detection/CannyEdgeDetection/CannyEdgeDetection.srcs/sources_1/new/canny_doubleThreshold.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|E:/github/Canny-Edge-Detection/CannyEdgeDetection/CannyEdgeDetection.srcs/sources_1/new/canny_doubleThreshold.v|
+!i113 0
+Z6 o-work work -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+R1
+ncanny_double@threshold
+vcanny_edge_detect_top
+R2
+!i10b 1
+!s100 W<n7zC0L?0>o3;J6z>FGT2
+Iz8bd2j`]AN]`R=IS??>z53
+R3
+R0
+w1669525014
+8E:/github/Canny-Edge-Detection/CannyEdgeDetection/CannyEdgeDetection.srcs/sources_1/new/canny_edge_detect_top.v
+FE:/github/Canny-Edge-Detection/CannyEdgeDetection/CannyEdgeDetection.srcs/sources_1/new/canny_edge_detect_top.v
+L0 1
+R4
+r1
+!s85 0
+31
+R5
+!s107 E:/github/Canny-Edge-Detection/CannyEdgeDetection/CannyEdgeDetection.srcs/sources_1/new/canny_edge_detect_top.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|E:/github/Canny-Edge-Detection/CannyEdgeDetection/CannyEdgeDetection.srcs/sources_1/new/canny_edge_detect_top.v|
+!i113 0
+R6
+R1
+vcanny_get_grandient
+R2
+!i10b 1
+!s100 P?<MdJ`M?QanIM8891Sbf2
+Ii[DzfRN>]mCC19TeNeJeM3
+R3
+R0
+w1669524999
+8E:/github/Canny-Edge-Detection/CannyEdgeDetection/CannyEdgeDetection.srcs/sources_1/new/canny_get_grandient.v
+FE:/github/Canny-Edge-Detection/CannyEdgeDetection/CannyEdgeDetection.srcs/sources_1/new/canny_get_grandient.v
+L0 1
+R4
+r1
+!s85 0
+31
+R5
+!s107 E:/github/Canny-Edge-Detection/CannyEdgeDetection/CannyEdgeDetection.srcs/sources_1/new/canny_get_grandient.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|E:/github/Canny-Edge-Detection/CannyEdgeDetection/CannyEdgeDetection.srcs/sources_1/new/canny_get_grandient.v|
+!i113 0
+R6
+R1
+vcanny_nonLocalMaxValue
+R2
+!i10b 1
+!s100 j[D6gNA[o3[^L_=@Mi6f>1
+IG40W5PgTDoQZXRkg;SoSb1
+R3
+R0
+w1669524948
+8E:/github/Canny-Edge-Detection/CannyEdgeDetection/CannyEdgeDetection.srcs/sources_1/new/canny_nonLocalMaxValue.v
+FE:/github/Canny-Edge-Detection/CannyEdgeDetection/CannyEdgeDetection.srcs/sources_1/new/canny_nonLocalMaxValue.v
+L0 1
+R4
+r1
+!s85 0
+31
+R5
+!s107 E:/github/Canny-Edge-Detection/CannyEdgeDetection/CannyEdgeDetection.srcs/sources_1/new/canny_nonLocalMaxValue.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|E:/github/Canny-Edge-Detection/CannyEdgeDetection/CannyEdgeDetection.srcs/sources_1/new/canny_nonLocalMaxValue.v|
+!i113 0
+R6
+R1
+ncanny_non@local@max@value
+vcordic_pipline
+R2
+!i10b 1
+!s100 L3HD=ec4ElQ>;:NzBi3Gc2
+I^fl_F@UiI=RT[R1l<S7CQ3
+R3
+R0
+w1668761332
+8E:/github/Canny-Edge-Detection/CannyEdgeDetection/CannyEdgeDetection.srcs/sources_1/new/cordic_pipline.v
+FE:/github/Canny-Edge-Detection/CannyEdgeDetection/CannyEdgeDetection.srcs/sources_1/new/cordic_pipline.v
+L0 1
+R4
+r1
+!s85 0
+31
+R5
+!s107 E:/github/Canny-Edge-Detection/CannyEdgeDetection/CannyEdgeDetection.srcs/sources_1/new/cordic_pipline.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|E:/github/Canny-Edge-Detection/CannyEdgeDetection/CannyEdgeDetection.srcs/sources_1/new/cordic_pipline.v|
+!i113 0
+R6
+R1
+vcordic_sqrt
+R2
+!i10b 1
+!s100 LZU5@c`Uh1manO<QffZfR0
+IDgJ_2Da35MT:m^RZd2bkY1
+R3
+R0
+w1669278867
+8E:/github/Canny-Edge-Detection/CannyEdgeDetection/CannyEdgeDetection.srcs/sources_1/new/cordic_sqrt.v
+FE:/github/Canny-Edge-Detection/CannyEdgeDetection/CannyEdgeDetection.srcs/sources_1/new/cordic_sqrt.v
+L0 1
+R4
+r1
+!s85 0
+31
+R5
+!s107 E:/github/Canny-Edge-Detection/CannyEdgeDetection/CannyEdgeDetection.srcs/sources_1/new/cordic_sqrt.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|E:/github/Canny-Edge-Detection/CannyEdgeDetection/CannyEdgeDetection.srcs/sources_1/new/cordic_sqrt.v|
+!i113 0
+R6
+R1
+vcordic_sqrt_tb
+R2
+!i10b 1
+!s100 ;]6:_TJoXR5Sz85_2;JF31
+IJ@DgnzcWSPS8T`8RS_fim0
+R3
+R0
+w1668762029
+8E:/github/Canny-Edge-Detection/CannyEdgeDetection/CannyEdgeDetection.srcs/sim_1/new/cordic_sqrt_tb.v
+FE:/github/Canny-Edge-Detection/CannyEdgeDetection/CannyEdgeDetection.srcs/sim_1/new/cordic_sqrt_tb.v
+L0 2
+R4
+r1
+!s85 0
+31
+R5
+!s107 E:/github/Canny-Edge-Detection/CannyEdgeDetection/CannyEdgeDetection.srcs/sim_1/new/cordic_sqrt_tb.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|E:/github/Canny-Edge-Detection/CannyEdgeDetection/CannyEdgeDetection.srcs/sim_1/new/cordic_sqrt_tb.v|
+!i113 0
+R6
+R1
+vfifo_ram
+R2
+!i10b 1
+!s100 omDX;hUZPR6DnRUOLM@d`0
+I;@2b<RZ6V15Rc6d[hVFl53
+R3
+R0
+w1668688038
+8E:/github/Canny-Edge-Detection/CannyEdgeDetection/CannyEdgeDetection.srcs/sources_1/new/fifo_ram.v
+FE:/github/Canny-Edge-Detection/CannyEdgeDetection/CannyEdgeDetection.srcs/sources_1/new/fifo_ram.v
+L0 1
+R4
+r1
+!s85 0
+31
+R5
+!s107 E:/github/Canny-Edge-Detection/CannyEdgeDetection/CannyEdgeDetection.srcs/sources_1/new/fifo_ram.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|E:/github/Canny-Edge-Detection/CannyEdgeDetection/CannyEdgeDetection.srcs/sources_1/new/fifo_ram.v|
+!i113 0
+R6
+R1
+vimage_gaussian_filter
+R2
+!i10b 1
+!s100 4Fgj:JOmVP_lQEA<o@Cdk0
+IzZciAgzf]gkbZI0[OEC[H0
+R3
+R0
+w1668952775
+8E:/github/Canny-Edge-Detection/CannyEdgeDetection/CannyEdgeDetection.srcs/sim_1/new/vip_gaussian_filter.v
+FE:/github/Canny-Edge-Detection/CannyEdgeDetection/CannyEdgeDetection.srcs/sim_1/new/vip_gaussian_filter.v
+L0 1
+R4
+r1
+!s85 0
+31
+R5
+!s107 E:/github/Canny-Edge-Detection/CannyEdgeDetection/CannyEdgeDetection.srcs/sim_1/new/vip_gaussian_filter.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|E:/github/Canny-Edge-Detection/CannyEdgeDetection/CannyEdgeDetection.srcs/sim_1/new/vip_gaussian_filter.v|
+!i113 0
+R6
+R1
+vmatrix_generate_3x3
+R2
+!i10b 1
+!s100 jk[dF:9m1NN_z20Z6;4Co1
+IXUE6K@ZXJgcGi^PEgl=Ye3
+R3
+R0
+w1669520670
+8E:/github/Canny-Edge-Detection/CannyEdgeDetection/CannyEdgeDetection.srcs/sources_1/new/matrix_generate_3x3.v
+FE:/github/Canny-Edge-Detection/CannyEdgeDetection/CannyEdgeDetection.srcs/sources_1/new/matrix_generate_3x3.v
+L0 1
+R4
+r1
+!s85 0
+31
+R5
+!s107 E:/github/Canny-Edge-Detection/CannyEdgeDetection/CannyEdgeDetection.srcs/sources_1/new/matrix_generate_3x3.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|E:/github/Canny-Edge-Detection/CannyEdgeDetection/CannyEdgeDetection.srcs/sources_1/new/matrix_generate_3x3.v|
+!i113 0
+R6
+R1
+vone_column_ram
+R2
+!i10b 1
+!s100 X_Bd^CkbOmT0gRm<aiI>i0
+IGk:9ZVa?SY_FdBmCP3IT40
+R3
+R0
+w1668689105
+8E:/github/Canny-Edge-Detection/CannyEdgeDetection/CannyEdgeDetection.srcs/sources_1/new/one_column_ram.v
+FE:/github/Canny-Edge-Detection/CannyEdgeDetection/CannyEdgeDetection.srcs/sources_1/new/one_column_ram.v
+L0 1
+R4
+r1
+!s85 0
+31
+R5
+!s107 E:/github/Canny-Edge-Detection/CannyEdgeDetection/CannyEdgeDetection.srcs/sources_1/new/one_column_ram.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|E:/github/Canny-Edge-Detection/CannyEdgeDetection/CannyEdgeDetection.srcs/sources_1/new/one_column_ram.v|
+!i113 0
+R6
+R1
+vVIP_RGB888_YCbCr444
+R2
+!i10b 1
+!s100 @fJV1KPR6@BQ;IfTd;Q4F3
+I0c?E?GeOF]G267TH9_b^V2
+R3
+R0
+w1668662844
+8E:/github/Canny-Edge-Detection/CannyEdgeDetection/CannyEdgeDetection.srcs/sim_1/new/VIP_RGB888_YCbCr444.v
+FE:/github/Canny-Edge-Detection/CannyEdgeDetection/CannyEdgeDetection.srcs/sim_1/new/VIP_RGB888_YCbCr444.v
+L0 32
+R4
+r1
+!s85 0
+31
+R5
+!s107 E:/github/Canny-Edge-Detection/CannyEdgeDetection/CannyEdgeDetection.srcs/sim_1/new/VIP_RGB888_YCbCr444.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|E:/github/Canny-Edge-Detection/CannyEdgeDetection/CannyEdgeDetection.srcs/sim_1/new/VIP_RGB888_YCbCr444.v|
+!i113 0
+R6
+R1
+n@v@i@p_@r@g@b888_@y@cb@cr444
