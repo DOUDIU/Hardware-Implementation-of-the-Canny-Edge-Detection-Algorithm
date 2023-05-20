@@ -57,7 +57,7 @@
     <Option Name="IPUserFilesDir" Val="$PIPUSERFILESDIR"/>
     <Option Name="IPStaticSourceDir" Val="$PIPUSERFILESDIR/ipstatic"/>
     <Option Name="EnableBDX" Val="FALSE"/>
-    <Option Name="WTXSimLaunchSim" Val="261"/>
+    <Option Name="WTXSimLaunchSim" Val="262"/>
     <Option Name="WTModelSimLaunchSim" Val="0"/>
     <Option Name="WTQuestaLaunchSim" Val="0"/>
     <Option Name="WTIesLaunchSim" Val="0"/>
@@ -88,82 +88,85 @@
   <FileSets Version="1" Minor="31">
     <FileSet Name="sources_1" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1" RelGenDir="$PGENDIR/sources_1">
       <Filter Type="Srcs"/>
-      <File Path="$PSRCDIR/sources_1/new/canny_doubleThreshold.v">
+      <File Path="$PPRDIR/../RTL/image_process.sv">
         <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../OV5640_lcd_yuv_sobel/OV5640_lcd_yuv.srcs/sources_1/new/canny_doubleThreshold.v"/>
-          <Attr Name="ImportTime" Val="1649750640"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PSRCDIR/sources_1/new/canny_get_grandient.v">
+      <File Path="$PPRDIR/../RTL/canny_doubleThreshold.v">
         <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../OV5640_lcd_yuv_sobel/OV5640_lcd_yuv.srcs/sources_1/new/canny_get_grandient.v"/>
-          <Attr Name="ImportTime" Val="1649747967"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PSRCDIR/sources_1/new/canny_nonLocalMaxValue.v">
+      <File Path="$PPRDIR/../RTL/one_column_ram.v">
         <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../OV5640_lcd_yuv_sobel/OV5640_lcd_yuv.srcs/sources_1/new/canny_nonLocalMaxValue.v"/>
-          <Attr Name="ImportTime" Val="1649750468"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PSRCDIR/sources_1/new/cordic_pipline.v">
+      <File Path="$PPRDIR/../RTL/cordic_pipline.v">
         <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../canny_edge_detection/ov5640_img_process.srcs/sources_1/new/cordic_pipline.v"/>
-          <Attr Name="ImportTime" Val="1668761332"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PSRCDIR/sources_1/new/cordic_sqrt.v">
+      <File Path="$PPRDIR/../RTL/cordic_sqrt.v">
         <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../canny_edge_detection/ov5640_img_process.srcs/sources_1/new/cordic_sqrt.v"/>
-          <Attr Name="ImportTime" Val="1669278867"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PSRCDIR/sources_1/new/fifo_ram.v">
+      <File Path="$PPRDIR/../RTL/canny_get_grandient.v">
         <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../canny_edge_detection/ov5640_img_process.srcs/sources_1/new/fifo_ram.v"/>
-          <Attr Name="ImportTime" Val="1668688038"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PSRCDIR/sources_1/new/matrix_generate_3x3.v">
+      <File Path="$PPRDIR/../RTL/canny_nonLocalMaxValue.v">
         <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../canny_edge_detection/ov5640_img_process.srcs/sources_1/new/matrix_generate_3x3.v"/>
-          <Attr Name="ImportTime" Val="1669520670"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PSRCDIR/sources_1/new/one_column_ram.v">
+      <File Path="$PPRDIR/../RTL/matrix_generate_3x3.v">
         <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../canny_edge_detection/ov5640_img_process.srcs/sources_1/new/one_column_ram.v"/>
-          <Attr Name="ImportTime" Val="1668689105"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PSRCDIR/sources_1/new/canny_edge_detect_top.v">
+      <File Path="$PPRDIR/../RTL/vip_gaussian_filter.v">
         <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../OV5640_lcd_yuv_sobel/OV5640_lcd_yuv.srcs/sources_1/new/canny_edge_detect_top.v"/>
-          <Attr Name="ImportTime" Val="1649746640"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PPRDIR/../RTL/VIP_RGB888_YCbCr444.v">
+        <FileInfo>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PPRDIR/../RTL/fifo_ram.v">
+        <FileInfo>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PPRDIR/../RTL/canny_edge_detect_top.v">
+        <FileInfo>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
@@ -191,33 +194,8 @@
           <Attr Name="IsVisible" Val="1"/>
         </FileInfo>
       </File>
-      <File Path="$PSRCDIR/sim_1/new/cordic_sqrt_tb.v">
+      <File Path="$PPRDIR/image_proces_tb_behav.wcfg">
         <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../canny_edge_detection/ov5640_img_process.srcs/sim_1/new/cordic_sqrt_tb.v"/>
-          <Attr Name="ImportTime" Val="1668762029"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="implementation"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <File Path="$PSRCDIR/sim_1/new/ov5640_tb.sv">
-        <FileInfo>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="implementation"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <File Path="$PSRCDIR/sim_1/new/VIP_RGB888_YCbCr444.v">
-        <FileInfo>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="implementation"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <File Path="$PSRCDIR/sim_1/new/vip_gaussian_filter.v">
-        <FileInfo>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
@@ -236,6 +214,7 @@
         <Option Name="XSimWcfgFile" Val="$PPRDIR/../OV5640_lcd_yuv_sobel/bmp_sim_VIP_tb_behav.wcfg"/>
         <Option Name="XSimWcfgFile" Val="$PPRDIR/../canny_edge_detection/bmp_sim_VIP_tb_behav.wcfg"/>
         <Option Name="XSimWcfgFile" Val="$PPRDIR/../canny_edge_detection/bmp_sim_VIP_tb_behav.wcfg"/>
+        <Option Name="XSimWcfgFile" Val="$PPRDIR/image_proces_tb_behav.wcfg"/>
       </Config>
     </FileSet>
     <FileSet Name="utils_1" Type="Utils" RelSrcDir="$PSRCDIR/utils_1" RelGenDir="$PGENDIR/utils_1">
