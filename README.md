@@ -38,7 +38,7 @@ https://docs.google.com/presentation/d/1ywzYQMz7mvWQlFPfZwrzZkoY8leG42afM7pXLFJ5
 
 ​	本工程中的仿真文件中读取bmp与保存bmp用的读取函数都是使用***相对路径***，如果不想自己重新切换下路径的话，上述三个文件夹及Vivado工程创建路径需与此教程一致。
 
-​	本工程可以使用***Modelsim Simulator***或者***Vivado Simulator***进行仿真，仅需在仿真顶层**haze_removal_tb.sv**的4-5两行注释另一仿真器代码，即可实现两个仿真器任意运行。但Vivado仿真比较慢，推荐使用Modelsim仿真。
+​	本工程可以使用***Modelsim Simulator***或者***Vivado Simulator***进行仿真，仅需在仿真顶层**canny_tb.sv**的4-5两行注释另一仿真器代码，即可实现两个仿真器任意运行。但Vivado仿真比较慢，推荐使用Modelsim仿真。
 
 ​	要进行处理的图片需经过win10自带的3D绘图保存为640x480大小的bmp，可以查看大小是否为900KB来验证图片是否可以应用仿真。(可以自己算一下，每个真彩色像素是3个字节，bmp的帧头是54个字节，按照640x480算应为640x480x3+54=900KB)
 
