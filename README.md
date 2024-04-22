@@ -1,6 +1,6 @@
 # Canny Edge Detection Based on FPGA
 
-![result](5.pic/readme_pic/result.png)
+![result](5.Pic/readme_pic/result.png)
 
 **走过路过，不要忘记点赞关注订阅哟！**
 
