@@ -1,6 +1,6 @@
 # Canny Edge Detection Based on FPGA
 
-![result](C:/Users/11358/Desktop/Hardware-Implementation-of-the-Canny-Edge-Detection-Algorithm-main/5.pic/readme_pic/result.png)
+![result](5.pic/readme_pic/result.png)
 
 **走过路过，不要忘记点赞关注订阅哟！**
 
@@ -43,6 +43,3 @@ https://docs.google.com/presentation/d/1ywzYQMz7mvWQlFPfZwrzZkoY8leG42afM7pXLFJ5
 ​	要进行处理的图片需经过win10自带的3D绘图保存为640x480大小的bmp，可以查看大小是否为900KB来验证图片是否可以应用仿真。(可以自己算一下，每个真彩色像素是3个字节，bmp的帧头是54个字节，按照640x480算应为640x480x3+54=900KB)
 
 **走过路过，不要忘记点赞关注订阅哟！**
-
-
-
