@@ -1,18 +1,18 @@
 `timescale 1ns / 1ps
 module canny_tb();
 
-`define Modelsim_Sim
-// `define Vivado_Sim
+// `define Modelsim_Sim
+`define Vivado_Sim
 
 //--------------------------------------------------------------------------------
 `ifdef Modelsim_Sim
-localparam	PIC_INPUT_PATH  	= 	"..\\pic\\monkey.bmp"			;
-localparam	PIC_OUTPUT_PATH 	= 	"..\\pic\\outcom.bmp"  			;
+localparam	PIC_INPUT_PATH  	= 	"..\\5.pic\\monkey.bmp"				;
+localparam	PIC_OUTPUT_PATH 	= 	"..\\5.pic\\outcom.bmp"  			;
 `endif
 //--------------------------------------------------------------------------------
 `ifdef Vivado_Sim
-localparam	PIC_INPUT_PATH  	= 	"../../../../../pic/monkey.bmp"			;
-localparam	PIC_OUTPUT_PATH 	= 	"../../../../../pic/outcom.bmp"  		;
+localparam	PIC_INPUT_PATH  	= 	"../../../../../5.pic/monkey.bmp"	;
+localparam	PIC_OUTPUT_PATH 	= 	"../../../../../5.pic/outcom.bmp"	;
 `endif
 
 localparam	PIC_WIDTH  			=	640							;

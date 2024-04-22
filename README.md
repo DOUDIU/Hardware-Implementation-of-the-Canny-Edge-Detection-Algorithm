@@ -1,4 +1,4 @@
-# Canny Edge Detection Base on Xilinx FPGA
+# Canny Edge Detection Based on FPGA
 
 ![result](pic/readme_pic/result.png)
 

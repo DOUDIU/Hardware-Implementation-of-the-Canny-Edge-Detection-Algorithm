@@ -4,7 +4,7 @@
 <!-- Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.                   -->
 <!-- Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.   -->
 
-<Project Product="Vivado" Version="7" Minor="63" Path="E:/github/fpga_project/Canny-Edge-Detection/Vivado/CannyEdgeDetection.xpr">
+<Project Product="Vivado" Version="7" Minor="63" Path="E:/github/fpga_project/Canny-Edge-Detection/3.Vivado_Project/CannyEdgeDetection.xpr">
   <DefaultLaunch Dir="$PRUNDIR"/>
   <Configuration>
     <Option Name="Id" Val="d071b409df2e481bad03aec31878bda8"/>
@@ -59,7 +59,7 @@
     <Option Name="IPUserFilesDir" Val="$PIPUSERFILESDIR"/>
     <Option Name="IPStaticSourceDir" Val="$PIPUSERFILESDIR/ipstatic"/>
     <Option Name="EnableBDX" Val="FALSE"/>
-    <Option Name="WTXSimLaunchSim" Val="267"/>
+    <Option Name="WTXSimLaunchSim" Val="270"/>
     <Option Name="WTModelSimLaunchSim" Val="0"/>
     <Option Name="WTQuestaLaunchSim" Val="0"/>
     <Option Name="WTIesLaunchSim" Val="0"/>
@@ -90,77 +90,77 @@
   <FileSets Version="1" Minor="31">
     <FileSet Name="sources_1" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1" RelGenDir="$PGENDIR/sources_1">
       <Filter Type="Srcs"/>
-      <File Path="$PPRDIR/../RTL/src/matrix_generate_3x3.v">
+      <File Path="$PPRDIR/../1.RTL/source/canny_edge_detect_top.v">
         <FileInfo>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PPRDIR/../RTL/src/vip_gaussian_filter.v">
+      <File Path="$PPRDIR/../1.RTL/source/canny_get_grandient.v">
         <FileInfo>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PPRDIR/../RTL/src/cordic_sqrt.v">
+      <File Path="$PPRDIR/../1.RTL/source/canny_nonLocalMaxValue.v">
         <FileInfo>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PPRDIR/../RTL/src/cordic_pipline.v">
+      <File Path="$PPRDIR/../1.RTL/source/cordic_pipline.v">
         <FileInfo>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PPRDIR/../RTL/src/fifo_ram.v">
+      <File Path="$PPRDIR/../1.RTL/source/cordic_sqrt.v">
         <FileInfo>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PPRDIR/../RTL/src/VIP_RGB888_YCbCr444.v">
+      <File Path="$PPRDIR/../1.RTL/source/fifo_ram.v">
         <FileInfo>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PPRDIR/../RTL/src/canny_doubleThreshold.v">
+      <File Path="$PPRDIR/../1.RTL/source/matrix_generate_3x3.v">
         <FileInfo>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PPRDIR/../RTL/src/canny_get_grandient.v">
+      <File Path="$PPRDIR/../1.RTL/source/vip_gaussian_filter.v">
         <FileInfo>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PPRDIR/../RTL/src/canny_edge_detect_top.v">
+      <File Path="$PPRDIR/../1.RTL/source/canny_doubleThreshold.v">
         <FileInfo>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PPRDIR/../RTL/src/canny_nonLocalMaxValue.v">
+      <File Path="$PPRDIR/../1.RTL/source/one_column_ram.v">
         <FileInfo>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PPRDIR/../RTL/src/one_column_ram.v">
+      <File Path="$PPRDIR/../1.RTL/source/VIP_RGB888_YCbCr444.v">
         <FileInfo>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
@@ -181,26 +181,28 @@
     </FileSet>
     <FileSet Name="sim_1" Type="SimulationSrcs" RelSrcDir="$PSRCDIR/sim_1" RelGenDir="$PGENDIR/sim_1">
       <Filter Type="Srcs"/>
-      <File Path="$PPRDIR/image_proces_tb_behav.wcfg">
+      <File Path="$PSRCDIR/sim_1/imports/3.Vivado_Project/image_proces_tb_behav.wcfg">
         <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/image_proces_tb_behav.wcfg"/>
+          <Attr Name="ImportTime" Val="1700138431"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PPRDIR/../RTL/tb/sim_cmos_tb.sv">
-        <FileInfo>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="implementation"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <File Path="$PPRDIR/../RTL/tb/canny_tb.sv">
+      <File Path="$PPRDIR/../1.RTL/sim/sim_cmos_tb.sv">
         <FileInfo>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PPRDIR/../RTL/tb/video_to_pic.sv">
+      <File Path="$PPRDIR/../1.RTL/sim/canny_tb.sv">
+        <FileInfo>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PPRDIR/../1.RTL/sim/video_to_pic.sv">
         <FileInfo>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
